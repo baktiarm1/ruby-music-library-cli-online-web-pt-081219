@@ -8,6 +8,11 @@ class Artist
     save
   end 
   
+  def self.create(name)
+   artist = Artist.new(name)
+   artist
+  end
+  
   def self.all 
     @@all
   end 
