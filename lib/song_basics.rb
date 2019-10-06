@@ -3,9 +3,9 @@ class Song
   
   @@all =[]
   
-  def initialize(name, artist)
+  def initialize(name, artist=Artist.new)
     @name =name 
-    @artist = artist 
+    
     save
   end 
   
