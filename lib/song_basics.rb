@@ -8,6 +8,10 @@ class Song
     save
   end 
   
+  def self.create(name)
+    Song.new(name)
+  end
+  
   def save
     @@all << self 
   end 
@@ -19,5 +23,7 @@ class Song
   def self.destroy_all 
     @@all.clear
   end 
+  
+  
   
 end 
