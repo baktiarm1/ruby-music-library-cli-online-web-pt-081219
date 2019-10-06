@@ -10,7 +10,7 @@ class Genre
   
   def self.create(name)
    genre = Genre.new(name)
-   artist
+   genre
   end
   
   def self.all 
